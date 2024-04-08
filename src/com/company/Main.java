@@ -10,8 +10,8 @@ public class Main {
             try {
                 Field field = person.getClass().getDeclaredField(check_field); //получаем поле по названию из массива
                 field.setAccessible(true); // варварски получаем доступ к приватному полю
-                Object fieldValue = field.get(person);
-                String fieldType = field.getType().getName();
+                Object fieldValue = field.get(person); //получаем значения поля, тип не знаем поэтому объявлен Object
+                String fieldType = field.getType().getName(); //получаем тип поля
                 if (fieldValue == null) {
                     errors.add("Значение поля " + check_field + " не может быть null");
                 } else if (fieldType == "int") {
