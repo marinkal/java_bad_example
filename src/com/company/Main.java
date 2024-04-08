@@ -15,8 +15,8 @@ public class Main {
                 if (fieldValue == null) {
                     errors.add("Значение поля " + check_field + " не может быть null");
                 } else if (fieldType == "int") {
-                    if ((Integer) fieldValue <= 18) {
-                        errors.add("Значение поля " + check_field + " должно быть больше 18");
+                    if ((Integer) fieldValue < 18) {
+                        errors.add("Значение поля " + check_field + " должно быть от 18 и больше");
                     }
                 } else if (fieldType == "boolean" && !(Boolean) fieldValue) {
                     errors.add("Значение поля " + check_field + " должно быть Истина");
