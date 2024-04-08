@@ -5,7 +5,7 @@ PersonState.java - это тот самый enum в который зашиты 
 
 Person.java - класс который имеет атрибут PersonState
 
-Main.java - вот тут есть validate(Person person, PersonState state) и именно там используется рефлексия (import java.lang.reflect.Field;) если хочется посмотреть как работает, запускать тоже тут_
+Main.java - вот тут есть validate(Person person, PersonState state) и именно там используется рефлексия (import java.lang.reflect.Field;) если хочется посмотреть как работает, запускать тоже тут_ но метод main
 
 ## а что тут вообще происходит (пример максимально простой)
 проверка всех указанных в enum для определенного PersonState полей на ne null
