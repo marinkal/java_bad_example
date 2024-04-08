@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
+// список состояний - с массивами полей которые надо проверять для перехода в это состояеме
 
 public enum PersonState {
     NOTHING (new String[]{}),
