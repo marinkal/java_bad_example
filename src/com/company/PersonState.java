@@ -5,7 +5,9 @@ package com.company;
 public enum PersonState {
     NOTHING (new String[]{}),
     CHOOSING_THE_PRESIDENT (new String[]{"age", "isRussianCitizen"}),
-    DRIVING_A_CAR (new String[]{"age", "hasDriverLicense"});
+    DRIVING_A_CAR (new String[]{"age", "hasDriverLicense"}),
+    HAS_AN_OFFICIAL_JOB (new String[]{"IsAgeMore14"}),
+    GETTING_MARRIED (new String[]{"age", "IsNotMarried"});
 
     public String[] fields;
 
