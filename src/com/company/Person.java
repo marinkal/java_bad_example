@@ -35,4 +35,12 @@ public class Person {
     public String getFio() {
         return this.fio;
     }
+
+    private boolean IsAgeMore14() {
+        return this.age >= 14;
+    }
+
+    private boolean IsNotMarried() {
+        return !this.isMarried;
+    }
 }
